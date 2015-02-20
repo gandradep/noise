@@ -9,8 +9,8 @@
 		#bottom{background-color: #7a5230}
 		canvas{position: absolute; top: 30px; left: 15px;}
 	</style>
-	<script type="text/javascript" src="/deps/Tone.js"></script>
-	<script type="text/javascript" src="/deps/nexusUI.js"></script>
+	<script type="text/javascript" src="./deps/Tone.js"></script>
+	<script type="text/javascript" src="./deps/nexusUI.js"></script>
 </head>
 <body onload="init()">
 	<div id="top"></div>
@@ -21,7 +21,7 @@
 
 	var currentState = '';
 
-	var song = new Tone.Player("/samples/dani2.mp3").toMaster();
+	var song = new Tone.Player("./samples/dani2.mp3").toMaster();
 	song.loop = true;
 	var noise = new Tone.Noise('brown').toMaster();
 	
